@@ -1,0 +1,66 @@
+/* Estilo general del Sitio */ 
+body {
+    background-color: $color-principal;
+    color: $color-fuente;
+    text-align: center;
+}
+
+/* Estilo footer general del sitio */
+.footergeneral{
+    background-color: rgb(37, 39, 39);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 300px;
+    .hfoot{
+        font-size: 20px;
+        text-align: center;
+    }
+    .diva{
+        text-align: center;
+    }
+    a{
+        transition: color 0.3s ease;
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $color-hover;
+    }
+}
+.iconosredes{
+    color: white;
+    text-align: center;
+    .icon{
+        display: inline-block;
+        margin:auto;
+        padding: 5px;
+        animation: float 5s ease-in-out infinite;
+        transition: 4s;
+    }
+    .fbline{
+        animation-delay: 1s;
+    }
+    .instagram{
+        animation-delay: 2s;
+    }
+    .whats{
+        animation-delay: 2s;
+    }
+    .gmail{
+        animation-delay: 1s;
+    }
+}
+@keyframes float{
+    0%{
+        transform: translateY(1);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(1);
+    }
+}

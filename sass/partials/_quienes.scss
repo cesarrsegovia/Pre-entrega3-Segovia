@@ -1,0 +1,23 @@
+/* Estilos quienes somos html */
+#quienes{
+    margin-top: 20px;
+    @extend %flex;
+    h2{
+        @include h-2;
+    }
+    .imgquien{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .textoquien{
+        width: 450px;
+        border: 2px solid yellow;
+        margin-top: 50px;
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            text-align: start;
+            padding: 20px;
+        }
+    }
+}

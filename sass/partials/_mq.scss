@@ -1,0 +1,95 @@
+/*Media queris*/
+@media screen and (min-width:576px) {
+    header{
+        margin-bottom: 50px;
+        ul{
+            transition: 2s ease;
+            .lihover:hover{
+                background: transparent;
+                border: 2px solid #799be6;
+                box-shadow: 0 0 10px 0 #799be6 inset,
+                0 0 10px 4px #799be6;
+                border-radius: 10px;
+            }
+        }
+        
+    }
+    /*main index mq*/
+    #maindex{
+        .index{
+            .superdiv{
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(2, 0.5fr);
+                grid-template-rows: 0.1fr 0.5fr 0.5fr;
+                grid-template-areas: 
+                "h2 h2" 
+                "p p"
+                "section playlist";
+                h2{
+                    grid-area: h2;
+                }
+                p{
+                    grid-area: p;
+                }
+                .playlist{
+                    grid-area: playlist;
+                    max-width: 100%;
+                    margin: 100px;
+                    
+                }
+                .formregistrar{
+                    grid-area: section;
+                }
+            }
+        }
+    
+
+}
+
+/*grid productos html*/
+    #product{
+        .mainpro{
+            padding: 0;
+            display: grid;
+            grid-template-rows: 0.5fr 1fr 1fr;
+        }
+}
+
+/*mq noticias html*/
+    .mainnoticias{
+        .videonoti{
+            video{
+                width: 600px;
+                height: 400px;
+                margin-bottom: 50px;
+            }
+        }
+    .noticards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .noticardtext{
+            width: 500px;
+            img{
+                height: 500px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/*mq contacto html*/
+    #contacto{
+        .contacards{
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+}
+
+

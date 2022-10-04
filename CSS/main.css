@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+#maindex .index .superdiv, .mainnoticias .noticards, #quienes, #contacto .contacards {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* Estilo general del Sitio */
+body {
+  background-color: #201f1f;
+  color: aliceblue;
+  text-align: center; }
+
+/* Estilo footer general del sitio */
+.footergeneral {
+  background-color: #252727;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-top: 300px; }
+  .footergeneral .hfoot {
+    font-size: 20px;
+    text-align: center; }
+  .footergeneral .diva {
+    text-align: center; }
+  .footergeneral a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none; }
+  .footergeneral a:hover {
+    color: cornflowerblue; }
+
+.iconosredes {
+  color: white;
+  text-align: center; }
+  .iconosredes .icon {
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+    animation: float 5s ease-in-out infinite;
+    transition: 4s; }
+  .iconosredes .fbline {
+    animation-delay: 1s; }
+  .iconosredes .instagram {
+    animation-delay: 2s; }
+  .iconosredes .whats {
+    animation-delay: 2s; }
+  .iconosredes .gmail {
+    animation-delay: 1s; }
+
+@keyframes float {
+  0% {
+    transform: translateY(1); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(1); } }
+
+/* Estilo index */
+#maindex .index {
+  margin-top: 20px; }
+  #maindex .index .vidmain video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; }
+  #maindex .index .superdiv h2 {
+    margin-top: 50px;
+    border-style: solid;
+    border-color: rgba(255, 255, 0, 0.836);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px; }
+  #maindex .index .superdiv p {
+    margin: 25px 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 50px; }
+  #maindex .index .superdiv .playlist {
+    margin-top: 100px; }
+  #maindex .index .superdiv section {
+    margin-bottom: 50px;
+    width: 400px;
+    background: #2e2d2d;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 8px;
+    border-style: inset;
+    border-color: aqua; }
+    #maindex .index .superdiv section h3 {
+      font-size: 22px; }
+    #maindex .index .superdiv section p {
+      text-align: center;
+      text-decoration: underline; }
+    #maindex .index .superdiv section .controls {
+      width: 100%;
+      background: white;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #14149e;
+      font-size: 18px;
+      color: black; }
+    #maindex .index .superdiv section .botons {
+      padding: 12px;
+      font-size: medium;
+      width: 190px;
+      cursor: pointer;
+      background: #799be6;
+      color: white;
+      transition: .5s ease;
+      border-radius: 10px; }
+    #maindex .index .superdiv section .botons:hover {
+      background: transparent;
+      border: 2px solid #799be6;
+      box-shadow: 0 0 10px 0 #799be6 inset, 0 0 10px 4px #799be6;
+      border-radius: 10px; }
+
+/* Estilo productos html */
+#product .cardspro {
+  display: flex;
+  gap: 40px;
+  margin-top: 100px;
+  flex-wrap: wrap; }
+  #product .cardspro .card {
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(201, 216, 118, 0.911);
+    cursor: default;
+    transition: all 400ms ease; }
+  #product .cardspro .card:hover {
+    box-shadow: 5px 5px 20px rgba(177, 207, 119, 0.87);
+    transform: translateY(-5%); }
+
+/* Estilos noticias html */
+.mainnoticias .h1news {
+  margin-top: 20px; }
+
+.mainnoticias video {
+  width: 350px;
+  height: 400px;
+  max-width: 100%; }
+
+.mainnoticias .noticards {
+  margin-top: 50px;
+  margin: auto;
+  max-width: 100%; }
+  .mainnoticias .noticards .noticardtext {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #5a5454;
+    box-shadow: 0px 1px 10px rgba(84, 174, 235, 0.911); }
+    .mainnoticias .noticards .noticardtext img {
+      width: 100%;
+      height: 70%; }
+    .mainnoticias .noticards .noticardtext h3 {
+      margin-top: 50px;
+      text-decoration: underline #799be6; }
+    .mainnoticias .noticards .noticardtext p {
+      line-height: 1.5;
+      text-align: center;
+      cursor: default; }
+    .mainnoticias .noticards .noticardtext a {
+      transition: color 0.3s ease;
+      color: #c6d3eb;
+      text-decoration: none;
+      padding: 10px;
+      border: 2px solid #799be6;
+      border-radius: 6px;
+      margin: auto;
+      margin-bottom: 20px; }
+    .mainnoticias .noticards .noticardtext a:hover {
+      color: cornflowerblue; }
+
+/* Estilos quienes somos html */
+#quienes {
+  margin-top: 20px; }
+  #quienes h2 {
+    margin-top: 50px;
+    border-style: solid;
+    border-color: rgba(255, 255, 0, 0.836);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px; }
+  #quienes .imgquien {
+    max-width: 100%;
+    margin-top: 20px; }
+  #quienes .textoquien {
+    width: 450px;
+    border: 2px solid yellow;
+    margin-top: 50px; }
+    #quienes .textoquien p {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: start;
+      padding: 20px; }
+
+/*Estilos contacto html */
+#contacto .contacards {
+  margin-top: 50px;
+  margin: auto; }
+  #contacto .contacards .contacardtext {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #5a5454;
+    cursor: default;
+    box-shadow: 0px 1px 10px rgba(84, 174, 235, 0.911); }
+    #contacto .contacards .contacardtext a {
+      transition: color 0.3s ease;
+      color: #c6d3eb;
+      text-decoration: none;
+      padding: 10px;
+      border: 2px solid #799be6;
+      border-radius: 6px;
+      margin: auto;
+      margin-bottom: 20px; }
+    #contacto .contacards .contacardtext a:hover {
+      color: cornflowerblue; }
+    #contacto .contacards .contacardtext img {
+      width: 100%;
+      height: 70%;
+      margin-bottom: 20px; }
+
+#contacto .divcon video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px; }
+
+/*Media queris*/
+@media screen and (min-width: 576px) {
+  header {
+    margin-bottom: 50px; }
+    header ul {
+      transition: 2s ease; }
+      header ul .lihover:hover {
+        background: transparent;
+        border: 2px solid #799be6;
+        box-shadow: 0 0 10px 0 #799be6 inset, 0 0 10px 4px #799be6;
+        border-radius: 10px; }
+  /*main index mq*/
+  #maindex .index .superdiv {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: 0.1fr 0.5fr 0.5fr;
+    grid-template-areas: "h2 h2"  "p p" "section playlist"; }
+    #maindex .index .superdiv h2 {
+      grid-area: h2; }
+    #maindex .index .superdiv p {
+      grid-area: p; }
+    #maindex .index .superdiv .playlist {
+      grid-area: playlist;
+      max-width: 100%;
+      margin: 100px; }
+    #maindex .index .superdiv .formregistrar {
+      grid-area: section; }
+  /*grid productos html*/
+  #product .mainpro {
+    padding: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr; }
+  /*mq noticias html*/
+  .mainnoticias .videonoti video {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 50px; }
+  .mainnoticias .noticards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .mainnoticias .noticards .noticardtext {
+      width: 500px; }
+      .mainnoticias .noticards .noticardtext img {
+        height: 500px; }
+      .mainnoticias .noticards .noticardtext p {
+        font-size: 20px; }
+  /*mq contacto html*/
+  #contacto .contacards {
+    display: flex;
+    flex-direction: row; } }

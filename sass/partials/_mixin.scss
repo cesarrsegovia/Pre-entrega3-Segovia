@@ -1,0 +1,14 @@
+@mixin h-2 {
+    margin-top: 50px;
+    border-style: solid; 
+    border-color: rgba(255, 255, 0, 0.836); 
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+@mixin videos {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
