@@ -8,6 +8,9 @@
         height: 400px;
         max-width: 100%;
     }
+    h2{
+        @include h-2;
+    }
     .noticards{
         @extend %flex;
         margin-top: 50px;

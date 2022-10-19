@@ -23,7 +23,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  margin-top: 300px; }
+  margin-top: 100px; }
   .footergeneral .hfoot {
     font-size: 20px;
     text-align: center; }
@@ -129,6 +129,9 @@ body {
   gap: 40px;
   margin-top: 100px;
   flex-wrap: wrap; }
+  #product .cardspro img {
+    width: 100%;
+    height: 240px; }
   #product .cardspro .card {
     border-radius: 6px;
     box-shadow: 0px 1px 10px rgba(201, 216, 118, 0.911);
@@ -146,6 +149,14 @@ body {
   width: 350px;
   height: 400px;
   max-width: 100%; }
+
+.mainnoticias h2 {
+  margin-top: 50px;
+  border-style: solid;
+  border-color: rgba(255, 255, 0, 0.836);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px; }
 
 .mainnoticias .noticards {
   margin-top: 50px;
@@ -209,20 +220,25 @@ body {
 
 /*Estilos contacto html */
 #contacto .contacards {
-  margin-top: 50px;
+  margin-top: 20px;
   margin: auto; }
   #contacto .contacards .contacardtext {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
+    align-items: center;
+    width: 40%;
     margin: 20px;
+    margin-top: 20px;
     border-radius: 6px;
     overflow: hidden;
     background: #5a5454;
     cursor: default;
     box-shadow: 0px 1px 10px rgba(84, 174, 235, 0.911); }
+    #contacto .contacards .contacardtext p {
+      font-size: 1.5rem;
+      margin-top: 10px; }
     #contacto .contacards .contacardtext a {
       transition: color 0.3s ease;
       color: #c6d3eb;
@@ -235,9 +251,9 @@ body {
     #contacto .contacards .contacardtext a:hover {
       color: cornflowerblue; }
     #contacto .contacards .contacardtext img {
-      width: 100%;
-      height: 70%;
-      margin-bottom: 20px; }
+      width: 70%;
+      height: 40%;
+      margin-top: 20px; }
 
 #contacto .divcon video {
   display: block;
